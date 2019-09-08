@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>UsuarioControl</servlet-name>
+        <servlet-class>cl.aiep.Examen1.controller.UsuarioControl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VentaControl</servlet-name>
+        <servlet-class>cl.aiep.Examen1.controller.VentaControl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EliminarVenta</servlet-name>
+        <servlet-class>cl.aiep.Examen1.controller.EliminarVenta</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UsuarioControl</servlet-name>
+        <url-pattern>/UsuarioControl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VentaControl</servlet-name>
+        <url-pattern>/VentaControl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EliminarVenta</servlet-name>
+        <url-pattern>/EliminarVenta</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
